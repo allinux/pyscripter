@@ -1,3 +1,15 @@
+SUPPORT PYTHON3.5
+======================================
+add compiled executable file for support python 3.5
+PyScripter.zip contains PyScripter.exe, PyScripter for Python 3.5.lnk files
+
+Rename legacy executable file C:\Program Files (x86)\PyScripter\PyScripter.exe to PyScripter.bak
+Copy PyScripter.exe to C:\Program Files (x86)\PyScripter
+Copy PyScripter for Python 3.5.lnk to C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PyScripter
+
+Use command line.
+PyScripter.exe --PYTHON35
+
 INSTRUCTIONS FOR COMPILIING PyScripter
 ======================================
 
@@ -38,3 +50,5 @@ To compile the PythonIDE.dpr, you first need to install the following components
 
 
 If you have managed to do all the above then you should be able to compile PyScripter! :) 
+
+
