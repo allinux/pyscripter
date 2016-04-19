@@ -111,20 +111,14 @@ uses
   JvCreateProcess in 'JvCreateProcess.pas',
   cCodeCompletion in 'cCodeCompletion.pas',
   cThemedVirtualStringTree in 'cThemedVirtualStringTree.pas',
-  SpTBXPageScroller in 'SpTBXPageScroller.pas',
+  SpTBXPageScroller in 'SpTBXPageScroller.pas' {/  Vcl.Themes,},
   SpTBXSkins in 'SpTBXSkins.pas',
   SynEdit,
   JvInspector,
   Vcl.StdCtrls,
   Vcl.Themes,
   Vcl.Styles,
-//  Vcl.Styles.UxTheme,
-//  Vcl.Styles.Utils.StdCtrls,
   Vcl.Styles.Utils.ComCtrls,
-//  Vcl.Styles.Utils.ScreenTips,
-//  Vcl.Styles.Utils.SysControls,
-//  Vcl.Styles.Utils.SysStyleHook,
-//  Vcl.Styles.Utils.Forms,
   Vcl.Styles.Utils.SystemMenu;
 
 {$R *.RES}
@@ -150,7 +144,6 @@ begin
     end;
   Application.MainFormOnTaskbar := True;
 
-  TStyleManager.TrySetStyle('Jet');
   Application.Title := 'PyScripter';
   Application.CreateForm(TCommandsDataModule, CommandsDataModule);
   Application.CreateForm(TPyIDEMainForm, PyIDEMainForm);

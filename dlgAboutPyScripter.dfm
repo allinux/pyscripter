@@ -12,7 +12,7 @@ inherited AboutBox: TAboutBox
   Position = poScreenCenter
   OnKeyPress = FormKeyPress
   ExplicitWidth = 364
-  ExplicitHeight = 274
+  ExplicitHeight = 270
   PixelsPerInch = 96
   TextHeight = 13
   object SpTBXTabControl1: TSpTBXTabControl
@@ -21,8 +21,9 @@ inherited AboutBox: TAboutBox
     Width = 358
     Height = 245
     Align = alClient
-    Color = clNone
+    Color = clWhite
     ActiveTabIndex = 0
+    TabBackgroundColor = clBtnFace
     TabPosition = ttpBottom
     HiddenItems = <>
     object tbAbout: TSpTBXTabItem
@@ -35,61 +36,6 @@ inherited AboutBox: TAboutBox
     object tbLinks: TSpTBXTabItem
       Caption = 'Links'
     end
-    object SpTBXTabSheet3: TSpTBXTabSheet
-      Left = 0
-      Top = 0
-      Width = 358
-      Height = 220
-      Caption = 'Links'
-      ImageIndex = -1
-      TabItem = 'tbLinks'
-      object ScrollBox1: TScrollBox
-        Left = 2
-        Top = 4
-        Width = 352
-        Height = 216
-        VertScrollBar.ParentColor = False
-        VertScrollBar.Smooth = True
-        VertScrollBar.Style = ssHotTrack
-        VertScrollBar.Tracking = True
-        Align = alClient
-        BorderStyle = bsNone
-        Color = clBtnFace
-        ParentColor = False
-        TabOrder = 0
-        object JvLinkLabel1: TJvLinkLabel
-          Left = 0
-          Top = 0
-          Width = 352
-          Height = 117
-          Caption = 
-            '<b>Links:</b><br><br>'#13#10'- The project home, Issue Tracker and sou' +
-            'rce code repository are hosted at Google Code (<link>pyscripter.' +
-            'googlecode.com</link>)<br>'#13#10'- Internet group support is avalable' +
-            ' at <link>groups.google.com/group/PyScripter</link><br>'#13#10'<br>'#13#10'P' +
-            'lease submit bug reports and questions about PyScripter to pyscr' +
-            'ipter@gmail.com.'
-          Text.Strings = (
-            
-              '<b>Links:</b><br><br>'#13#10'- The project home, Issue Tracker and sou' +
-              'rce code repository are hosted at Google Code (<link>pyscripter.' +
-              'googlecode.com</link>)<br>'#13#10'- Internet group support is avalable' +
-              ' at <link>groups.google.com/group/PyScripter</link><br>'#13#10'<br>'#13#10'P' +
-              'lease submit bug reports and questions about PyScripter to pyscr' +
-              'ipter@gmail.com.')
-          HotLinks = True
-          OnLinkClick = JvLinkLabelLinkClick
-          Align = alTop
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -11
-          Font.Name = 'MS Shell Dlg 2'
-          Font.Style = []
-          ParentFont = False
-          ExplicitWidth = 348
-        end
-      end
-    end
     object SpTBXTabSheet2: TSpTBXTabSheet
       Left = 0
       Top = 0
@@ -100,9 +46,9 @@ inherited AboutBox: TAboutBox
       TabItem = 'tbCredits'
       object ScrollBox: TSpTBXPageScroller
         Left = 2
-        Top = 4
-        Width = 352
-        Height = 216
+        Top = 2
+        Width = 354
+        Height = 218
         Align = alClient
         Color = clBtnFace
         ParentColor = False
@@ -110,7 +56,7 @@ inherited AboutBox: TAboutBox
         object JvLinkLabel: TJvLinkLabel
           Left = 0
           Top = 0
-          Width = 352
+          Width = 354
           Height = 368
           Caption = 
             '<b>Credits</b><br>'#13#10'Special thanks to the many great developers ' +
@@ -162,8 +108,61 @@ inherited AboutBox: TAboutBox
           MarginHeight = 2
           OnLinkClick = JvLinkLabelLinkClick
           Align = alTop
-          ExplicitLeft = -2
-          ExplicitTop = -107
+        end
+      end
+    end
+    object SpTBXTabSheet3: TSpTBXTabSheet
+      Left = 0
+      Top = 0
+      Width = 358
+      Height = 220
+      Caption = 'Links'
+      ImageIndex = -1
+      TabItem = 'tbLinks'
+      object ScrollBox1: TScrollBox
+        Left = 2
+        Top = 2
+        Width = 354
+        Height = 218
+        VertScrollBar.ParentColor = False
+        VertScrollBar.Smooth = True
+        VertScrollBar.Style = ssHotTrack
+        VertScrollBar.Tracking = True
+        Align = alClient
+        BorderStyle = bsNone
+        Color = clBtnFace
+        ParentColor = False
+        TabOrder = 0
+        object JvLinkLabel1: TJvLinkLabel
+          Left = 0
+          Top = 0
+          Width = 354
+          Height = 117
+          Caption = 
+            '<b>Links:</b><br><br>'#13#10'- The project home, Issue Tracker and sou' +
+            'rce code repository are hosted at Google Code (<link>pyscripter.' +
+            'googlecode.com</link>)<br>'#13#10'- Internet group support is avalable' +
+            ' at <link>groups.google.com/group/PyScripter</link><br>'#13#10'<br>'#13#10'P' +
+            'lease submit bug reports and questions about PyScripter to pyscr' +
+            'ipter@gmail.com.'
+          Text.Strings = (
+            
+              '<b>Links:</b><br><br>'#13#10'- The project home, Issue Tracker and sou' +
+              'rce code repository are hosted at Google Code (<link>pyscripter.' +
+              'googlecode.com</link>)<br>'#13#10'- Internet group support is avalable' +
+              ' at <link>groups.google.com/group/PyScripter</link><br>'#13#10'<br>'#13#10'P' +
+              'lease submit bug reports and questions about PyScripter to pyscr' +
+              'ipter@gmail.com.')
+          HotLinks = True
+          OnLinkClick = JvLinkLabelLinkClick
+          Align = alTop
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Shell Dlg 2'
+          Font.Style = []
+          ParentFont = False
+          ExplicitWidth = 348
         end
       end
     end

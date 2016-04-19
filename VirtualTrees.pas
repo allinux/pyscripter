@@ -35551,8 +35551,9 @@ initialization
   Watcher := TCriticalSection.Create;
 
 //Note - not using class constructors as they are not supported on C++ Builder.
-  TCustomStyleEngine.RegisterStyleHook(TVirtualStringTree, TVclStyleScrollBarsHook);
-  TCustomStyleEngine.RegisterStyleHook(TVirtualDrawTree, TVclStyleScrollBarsHook);
+// for patch. already registered
+  //TCustomStyleEngine.RegisterStyleHook(TVirtualStringTree, TVclStyleScrollBarsHook);
+  //TCustomStyleEngine.RegisterStyleHook(TVirtualDrawTree, TVclStyleScrollBarsHook);
 
 finalization
   if Initialized then
