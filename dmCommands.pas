@@ -24,7 +24,7 @@ uses
   JvStringHolder, cPyBaseDebugger,
   SynEditTypes, VirtualExplorerTree, VirtualShellNotifier, SynHighlighterWeb,
   SynHighlighterCpp, SynHighlighterYAML,
-  SpTBXTabs, dlgOptionsEditor, System.Actions;
+  SpTBXTabs, dlgOptionsEditor, System.Actions, System.ImageList;
 
 type
   TFileChangeNotificationType = (fcnFull, fcnNoMappedDrives, fcnDisabled);

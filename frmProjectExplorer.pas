@@ -18,7 +18,7 @@ uses
   Dialogs, frmIDEDockWin, JvComponentBase, JvDockControlForm, ExtCtrls,
   cProjectClasses, VirtualTrees, ImgList, Menus, TB2Item, SpTBXItem,
   ActnList, TB2Dock, TB2Toolbar, ActiveX, SpTBXSkins, System.Actions,
-  SpTBXControls;
+  SpTBXControls, System.ImageList;
 
 type
   TProjectExplorerWindow = class(TIDEDockWindow)
